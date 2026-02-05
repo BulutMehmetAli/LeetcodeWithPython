@@ -1,0 +1,34 @@
+Enumerate() in Python
+
+enumerate() function adds a counter to each item in a list or any other iterable, and returns a list of tuples containing the index position and the element for each element of the iterable.
+
+It turns the iterable into something we can loop through using indexes, where each item comes with its number (starting from 0 by default).
+
+a = ["Geeks", "for", "Geeks"]
+
+# Iterating list using enumerate to get both index and element
+for i, name in enumerate(a):
+    print(f"Index {i}: {name}")
+# Converting to a list of tuples
+print(list(enumerate(a)))
+
+In Python, the enumerate() function serves as an iterator, inheriting all associated iterator functions and methods.
+
+We can use enumerate() with a dictionary to get both the index and its key-value pair:
+
+d = {"a": 10, "b": 20, "c": 30}
+
+# Enumerating through dictionary items
+for index, (key, value) in enumerate(d.items()):
+    print(index, "-", key, ":", value)
+
+Enumerating a String
+s = "python"
+for i, ch in enumerate(s):
+    print(f"Index {i}: {ch}")
+
+https://www.geeksforgeeks.org/python/enumerate-in-python/
+
+
+More detail:
+https://realpython.com/python-enumerate/
